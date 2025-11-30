@@ -5,21 +5,21 @@
 class Gotodo < Formula
   desc "A tiny, delicate todo CLI written in Go"
   homepage "https://github.com/yuxbao/gotodo"
-  version "1.2.1"
+  version "1.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yuxbao/gotodo/releases/download/v1.2.1/gotodo_1.2.1_darwin_amd64.tar.gz"
-      sha256 "2666ddbc8aa759b9a6b37c88a075bce9e823982603c129daf92f36d495164040"
+      url "https://github.com/yuxbao/gotodo/releases/download/v1.2.2/gotodo_1.2.2_darwin_amd64.tar.gz"
+      sha256 "c869743f1c73da2204c178ffe4dd754c1451e82e0338c016e7287dfe17e005ad"
 
       def install
         bin.install "gotodo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yuxbao/gotodo/releases/download/v1.2.1/gotodo_1.2.1_darwin_arm64.tar.gz"
-      sha256 "1ebbbe9298598e031a367da4e74090e6ff67517525f24384d1248acdaeeec030"
+      url "https://github.com/yuxbao/gotodo/releases/download/v1.2.2/gotodo_1.2.2_darwin_arm64.tar.gz"
+      sha256 "8ffc7fb3b6a99d231e8833771768302dfd920b52eb206527cd2ed50edeb9fe9c"
 
       def install
         bin.install "gotodo"
@@ -29,15 +29,15 @@ class Gotodo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yuxbao/gotodo/releases/download/v1.2.1/gotodo_1.2.1_linux_amd64.tar.gz"
-      sha256 "88e66e119db3cbfa1388fb29380ee314a799a92ca312a837d45c3b06d899ef6c"
+      url "https://github.com/yuxbao/gotodo/releases/download/v1.2.2/gotodo_1.2.2_linux_amd64.tar.gz"
+      sha256 "28c109c624394a4b46bfc4408999851ec9ca1ce30f1e94e36700623bb266147b"
       def install
         bin.install "gotodo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yuxbao/gotodo/releases/download/v1.2.1/gotodo_1.2.1_linux_arm64.tar.gz"
-      sha256 "1371260580bc15660bd1f9a54607239062bd4cca5d78ef472d35ca77ad63318b"
+      url "https://github.com/yuxbao/gotodo/releases/download/v1.2.2/gotodo_1.2.2_linux_arm64.tar.gz"
+      sha256 "1a4db83fea959d0091cdb96b11bf4d4f1a422edaaea5ba7f5c5d275a23427742"
       def install
         bin.install "gotodo"
       end
